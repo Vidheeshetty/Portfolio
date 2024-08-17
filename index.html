@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vidhee Shetty</title>
+    <!-- Tailwind CSS -->
+    <link href="output.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Vidhee Shetty</a>
+            <div class="space-x-4">
+                <a href="#about" class="hover:underline"><i class="fas fa-user"></i> About</a>
+                <a href="#skills" class="hover:underline"><i class="fas fa-laptop-code"></i> Skills</a>
+                <a href="#projects" class="hover:underline"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#contact" class="hover:underline"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with Typing Animation -->
+    <header class="relative bg-cover bg-center p-10 text-center animate__animated animate__fadeInDown mt-16"
+        style="background-image: url('images/background.jpg');">
+        <div class="absolute inset-0 bg-gray-900 opacity-75"></div> <!-- Overlay -->
+        <h1 class="relative text-6xl font-bold mb-4 text-black">Hi, I'm Vidhee Shetty</h1>
+        <p class="relative text-3xl text-blue-400">
+            <span id="typing"></span>
+        </p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="p-10">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="md:w-1/3 bg-gray-800 rounded-lg p-6" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="text-gray-300">I am Vidhee Shetty, a B.Tech graduate in Computer Science and Engineering
+                        from VIT Chennai. I have over a year of experience in Business Analysis, Machine Learning, and
+                        Deep Learning.</p>
+                </div>
+                <div class="md:w-1/3 bg-gray-800 rounded-lg p-6 mt-6 md:mt-0" data-aos="fade-up">
+                    <h3 class="text-2xl font-semibold mb-4">My Expertise</h3>
+                    <p class="text-gray-300">My work spans from prompt engineering and LLMs to backend development and
+                        server optimization. I have a strong technical foundation and a passion for technology.</p>
+                </div>
+                <div class="md:w-1/3 bg-gray-800 rounded-lg p-6 mt-6 md:mt-0" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-4">Experience</h3>
+                    <p class="text-gray-300">I have interned at Omysha Foundation, focusing on developing student
+                        learning platforms using Moodle, and have experience in business analysis, research, and website
+                        testing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-900 p-10" data-aos="fade-right">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-white">Skills</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-800 border border-blue-400 p-6 rounded-lg hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-white">Technical Skills</h3>
+                    <ul class="list-disc ml-5 mt-2 text-white">
+                        <li>Python Programming</li>
+                        <li>Machine Learning (ML) & Deep Learning (DL)</li>
+                        <li>Large Language Model (LLM) Fine-Tuning</li>
+                        <li>Prompt Engineering</li>
+                        <li>Cloud Platforms: Azure, AWS, GCP</li>
+                        <li>Backend Development & Server Optimization</li>
+                        <li>Frontend Development</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 border border-blue-400 p-6 rounded-lg hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-white">Tools & Technologies</h3>
+                    <ul class="list-disc ml-5 mt-2 text-white">
+                        <li>Moodle for Student Learning Platforms</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Data Analysis</li>
+                        <li>Autonomous Drones & IoT</li>
+                        <li>Cryptography & Network Security</li>
+                        <li>Research & Analytical Skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-10" data-aos="zoom-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-semibold">Tea Leaf Disease Detection</h3>
+                    <p class="text-gray-400">Summer Research Intern at VIT Chennai</p>
+                    <p>Developed a machine learning model to detect diseases in tea leaves, contributing to agricultural
+                        efficiency.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">vong.earth Website</h3>
+                    <p class="text-gray-400">Intern at Omysha Foundation</p>
+                    <p>Designed and developed the website for The VONG Movement, focusing on user engagement and
+                        sustainability advocacy.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Student Learning Platform</h3>
+                    <p class="text-gray-400">Intern at Omysha Foundation</p>
+                    <p>Developed a learning platform using Moodle, facilitating better educational experiences for
+                        students.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Autonomous Drones</h3>
+                    <p class="text-gray-400">Freelance Project</p>
+                    <p>Worked on the development of autonomous drones for specific tasks, integrating IoT and AI
+                        technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robot Section -->
+    <section id="robot" class="p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 text-white">Meet My Assistant</h2>
+            <img src="images/robot.png" alt="Robot Assistant" class="mx-auto w-32 animate__animated animate__bounce">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 p-10" data-aos="fade-up">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p>If you're interested in working together or have any questions, feel free to reach out to me through the
+                form below.</p>
+            <form class="mt-6" id="contact-form">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2" for="name">Name</label>
+                    <input type="text" id="name" name="user_name" class="w-full p-2 rounded bg-gray-700 text-white"
+                        placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2" for="email">Email</label>
+                    <input type="email" id="email" name="user_email" class="w-full p-2 rounded bg-gray-700 text-white"
+                        placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2" for="message">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 rounded bg-gray-700 text-white"
+                        placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-500 hover:scale-105 transition-transform duration-300 px-4 py-2 rounded">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center">
+        <p>&copy; 2024 Vidhee Shetty. All rights reserved.</p>
+        <div class="mt-2">
+            <a href="https://twitter.com" target="_blank" class="text-blue-400 hover:text-blue-500 mx-2"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-800 mx-2"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white mx-2"><i
+                    class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling, Typing Animation, and AOS Init -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Typing animation
+        const typing = document.getElementById('typing');
+        const phrases = ["Business Analyst", "ML/DL Enthusiast", "Technology Passionate"];
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        let currentPhrase = '';
+        let currentLetters = '';
+
+        function typeLetters() {
+            currentPhrase = phrases[phraseIndex];
+            currentLetters = currentPhrase.slice(0, ++letterIndex);
+
+            typing.textContent = currentLetters;
+
+            if (currentLetters.length === currentPhrase.length) {
+                setTimeout(() => {
+                    letterIndex = 0;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    typeLetters();
+                }, 2000); // Pause after typing each phrase
+            } else {
+                setTimeout(typeLetters, 100); // Typing speed
+            }
+        }
+
+        typeLetters();
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
